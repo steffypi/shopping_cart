@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+<div class="container mx-5 my-3">
+
+  <form method="POST" enctype="multipart/form-data" class="mx-5 ">
+        {% csrf_token %}
+   <div class="mb-3">
+  <label  class="form-label">Username</label>
+  <input type="text" class="form-control" name="ak"  placeholder="Enter username">
+</div>
+   <div class="mb-3">
+  <label  class="form-label">First name</label>
+  <input type="text" class="form-control"  name="ab" placeholder="Enter first name">
+</div>
+      <div class="mb-3">
+  <label  class="form-label">last nmae</label>
+  <input type="text" class="form-control"  name="ac" placeholder="Enter last name">
+</div>
+      <div class="mb-3">
+  <label  class="form-label">Email</label>
+  <input type="email" class="form-control"  name="ad" placeholder="Enter Email">
+</div>
+   <div class="mb-3">
+  <label  class="form-label">Password</label>
+  <input type="password" class="form-control"  name="ae" placeholder="Enter password">
+</div>
+      <div class="mb-3">
+  <label  class="form-label">Confirm password Password</label>
+  <input type="password" class="form-control"  name="af" placeholder="Enter confirm password">
+</div>
+     <div class="mb-3">
+  <input type="submit" class="form-control bg-secondary">
+</div>
+
+</form>
+    </div>
+    </div>
+{% endblock %}
